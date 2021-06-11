@@ -6,7 +6,7 @@ var emojiDictionary = {
   "🥝": "Kiwi Fruit",
   "🥑": "Avocado",
   "🍒": "Cherries",
-  "🍆": "Egg plant",
+  "🍆": "Eggplant",
   "🍑": "Peach"
 };
 
