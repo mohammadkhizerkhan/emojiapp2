@@ -26,10 +26,13 @@ export default function App() {
 
     var meaning = emojiDictionary[userInput];
 
-    if (meaning === undefined) {
-      meaning = "we don't have this in our database";
+    if (userInput in emojiDictionary) {
+      setMeaning(emojiDictionary[userInput]);
+    } else if (userInput === "") {
+      setMeaning("");
+    } else {
+      setMeaning("That's a new one! We don't have it in our database");
     }
-    setMeaning(meaning);
   }
 
   function emojiClickHandler(emoji) {
@@ -38,7 +41,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>inside outt!</h1>
+      <h1>Emoji Interpreter</h1>
 
       <input onChange={emojiInputHandler} />
 

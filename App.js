@@ -2,18 +2,12 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance",
-  "😔":" Pensive Face",
-  "😪":" Sleepy Face",
-  "🤐":"Zipper-Mouth Face",
-  "🤗":"Hugging Face",
-  "😈":" miling Face with Horns",
-  "☹️":" Frowning Face"
+  "🥥": "coconut",
+  "🥝": "Kiwi Fruit",
+  "🥑": "Avocado",
+  "🍒": "Cherries",
+  "🍆": "Eggplant",
+  "🍑": "Peach"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
